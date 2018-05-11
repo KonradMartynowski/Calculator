@@ -1,0 +1,50 @@
+﻿<Window x:Class="SimpleCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleCalc"
+        mc:Ignorable="d"
+        Title="SimpleCalc" Height="375" Width="383.5" WindowStartupLocation="CenterScreen" Margin="0" PreviewKeyDown="Grid_PreviewKeyDown" MaxHeight="375" MinHeight="375" MaxWidth="383.5" MinWidth="383.5">
+    <Window.Resources>
+        <Color x:Key="Color1">#FFEEEEEE</Color>
+    </Window.Resources>
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
+
+
+    <Grid Margin="0" Background="#FF4A4A60">
+        <Button x:Name="Btn1" Content="1" HorizontalAlignment="Left" Margin="17,152,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold" Height="32"  FontSize="16" Click="Btn1_Click"/>
+        <Button x:Name="Btn2" Content="2" HorizontalAlignment="Left" Margin="105,152,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold" Height="32" FontSize="16" Click="Btn2_Click"/>
+        <Button x:Name="Btn3" Content="3" HorizontalAlignment="Left" Margin="193,152,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold" Height="32" FontSize="16" Click="Btn3_Click"/>
+        <Button x:Name="Btn4" Content="4" HorizontalAlignment="Left" Margin="17,199,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold" Height="32" FontSize="16" Click="Btn4_Click"/>
+        <Button x:Name="Btn5" Content="5" HorizontalAlignment="Left" Margin="105,199,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold" Height="32" FontSize="16" Click="Btn5_Click"/>
+        <Button x:Name="Btn6" Content="6" HorizontalAlignment="Left" Margin="193,199,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold" Height="32" FontSize="16" Click="Btn6_Click"/>
+        <Button x:Name="Btn7" Content="7" HorizontalAlignment="Left" Margin="17,246,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold" Height="32" FontSize="16" Click="Btn7_Click"/>
+        <Button x:Name="Btn8" Content="8" HorizontalAlignment="Left" Margin="105,246,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold" Height="32" FontSize="16" Click="Btn8_Click"/>
+        <Button x:Name="Btn9" Content="9" HorizontalAlignment="Left" Margin="193,246,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold" Height="32" FontSize="16" Click="Btn9_Click"/>
+        <Button x:Name="BtnSum" Content="+" HorizontalAlignment="Left" Margin="281,152,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold" Height="32" FontSize="16" Click="BtnSum_Click" Background="#FF2EC8B4"/>
+        <Button x:Name="BtnSubstraction" Content="-" HorizontalAlignment="Left" Margin="281,199,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold" Height="32" FontSize="16" Click="BtnSubstraction_Click" Background="#FF2EC8B4"/>
+        <Button x:Name="BtnMultiplication" Content="*" HorizontalAlignment="Left" Margin="281,246,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold" Height="32" FontSize="16" Click="BtnMultiplication_Click" Background="#FF2EC8B4"/>
+        <Button x:Name="BtnPoint" Content="." HorizontalAlignment="Left" Margin="17,292,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold" Height="32" FontSize="16" Click="BtnPoint_Click"/>
+        <Button x:Name="Btn0" Content="0" HorizontalAlignment="Left" Margin="105,292,0,0" VerticalAlignment="Top" Width="74" FontWeight="Bold" Height="32" FontSize="16" Click="Btn0_Click"/>
+        <Button x:Name="BtnScore" Content="=" HorizontalAlignment="Left" Margin="281,106,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold" Height="32" FontSize="16" Click="BtnScore_Click" Background="#FF2EC8B4"/>
+        <Button x:Name="BtnDivision" Content="/" HorizontalAlignment="Left" Margin="281,292,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold" Height="32" FontSize="16" Click="BtnDivision_Click" Background="#FF2EC8B4"/>
+        <Button x:Name="BtnC" Content="C" HorizontalAlignment="Left" Margin="193,106,0,0" VerticalAlignment="Top" Width="72" Height="32" FontWeight="Bold" FontSize="16" Click="BtnC_Click" Background="#FF2EC8B4"/>
+        <Button x:Name="BtnBracketOpen" Content="(" HorizontalAlignment="Left" Margin="17,106,0,0" VerticalAlignment="Top" Width="72" Height="32" FontWeight="Bold" FontSize="16" Click="BtnBracketOpen_Click" Background="#FF2EC8B4"/>
+        <Label x:Name="LblCurent" HorizontalAlignment="Left" Margin="16,14,0,0" VerticalAlignment="Top" Height="31" Width="336" FontWeight="Bold" FontSize="16"  HorizontalContentAlignment="Right" Background="#FFEEEEEE">
+            <TextBlock x:Name="TxtCurent" TextWrapping="Wrap" Text=""/>
+        </Label>
+        <Label x:Name="LblScore" HorizontalAlignment="Left" Margin="17,58,0,0" VerticalAlignment="Top" Height="32" Width="336" FontWeight="Bold" FontSize="16"  HorizontalContentAlignment="Right">
+            <Label.Background>
+                <SolidColorBrush Color="{DynamicResource Color1}"/>
+            </Label.Background>
+            <TextBlock x:Name="TxtScore" TextWrapping="Wrap" Text=""/>
+        </Label>
+        <Button x:Name="BtnBracketClose" Content=")" HorizontalAlignment="Left" Margin="105,106,0,0" VerticalAlignment="Top" Width="74" Height="32" FontWeight="Bold" FontSize="16" Click="BtnBracketClose_Click" Background="#FF2EC8B4"/>
+        <Button x:Name="BtnDel" Content="Del." HorizontalAlignment="Left" Margin="193,292,0,0" VerticalAlignment="Top" Width="74" Height="32" FontWeight="Bold" FontSize="16" Click="BtnDel_Click" Background="#FFDDDDDD"/>
+
+    </Grid>
+</Window>
+
